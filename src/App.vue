@@ -1,22 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <TitlePage msg="All my Illustrations" />
+    <MasonryPanels />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import TitlePage from "./components/TitlePage.vue";
+import MasonryPanels from "./components/MasonryPanels.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    TitlePage,
+    MasonryPanels
   }
 };
 </script>
 
 <style lang="scss">
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
